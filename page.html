@@ -3,13 +3,14 @@
   <script src=convert.js></script>
   <head>
     <h1>Base Converter</h1>
-    <h2>Made by Tyler Davis</h2>
+    <h4>Made by Tyler Davis</h2>
   </head>
   <body>
+    <p>Enter a number and its current base (2-16) and then enter the base (2-16) that you wish to convert the number to.</p>
     <form action="" method="get">
-      <input type="number" name="number" required>
-      <input type="number" name="currentBase">
-      <input type="number" name="desiredBase">
+      Number:<input type="string" name="number" required>
+      Current base:<input type="number" name="currentBase" min="2" max="16">
+      Desired base:<input type="number" name="desiredBase" min="2" max="16">
       <input type="submit" name="button" value="Submit" onClick="convert(this.form)">
     </form>
 
